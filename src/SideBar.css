@@ -99,6 +99,12 @@
   color: #4b5563;
 }
 
+#profiles{
+  margin-left: 50px;
+  max-width: fit-content;
+  margin-right: 50px;
+}
+
 /* Responsive Design */
 @media (min-width: 768px) {
   .sidebar {
@@ -123,3 +129,4 @@
     margin-left: 0;
   }
 }
+

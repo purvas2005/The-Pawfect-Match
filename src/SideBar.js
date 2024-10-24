@@ -24,7 +24,7 @@ const Sidebar = () => {
       </div>
     ),
     profile: (
-      <div className="content-section">
+      <div className="content-section" id="profiles">
         <PetProfiles/>
       </div>
     ),

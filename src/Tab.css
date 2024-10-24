@@ -1,0 +1,23 @@
+.tab {
+    background-color: #f9e0f1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 45px; 
+    height: 45px;
+    margin-right: 30px; /* Space between logo and title */
+}
+
+.tab-title {
+    font-family: Georgia, serif;
+    margin: 0;
+    font-size: 24px;
+    color:  #2f1f43;
+}
+.loginlogo{
+    align-items:right;
+}

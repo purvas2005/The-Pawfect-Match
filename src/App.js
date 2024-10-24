@@ -1,8 +1,8 @@
 import './App.css';
-import Banner from './Banner.js'
+import Banner from './Components/Banner.js'
 import React, { useState, useEffect } from 'react';
-import HeadBar from './HeadBar'
-import Sidebar from './SideBar.js'
+import Tab from './Components/HeadBar'
+import Sidebar from './Components/SideBar.js'
 
 function App() {
   const [showContent, setShowContent] = useState(false);
@@ -17,9 +17,8 @@ function App() {
 
   return (
     <div className="App">
-      <HeadBar />
+      <Tab/>
       <Sidebar />
-    
     </div>
   );  
 }

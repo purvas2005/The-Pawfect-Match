@@ -11,7 +11,7 @@ const Sidebar = () => {
 
   const menuItems = [
     { id: 'home', icon: '🏠', text: 'Home' },
-    { id: 'profile', icon: '👤', text: 'Profile' },
+    { id: 'profile', icon: '🐾', text: 'Pet Profiles' },
     { id: 'about', icon: '⚙️', text: 'About Us' },
     { id:'contact',icon:'☎️',text:'Contact Us'},
     { id:'resources',icon:'📚',text:'Resources'},

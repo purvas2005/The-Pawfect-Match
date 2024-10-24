@@ -1,7 +1,7 @@
 import './App.css';
 import Banner from './Components/Banner.js'
 import React, { useState, useEffect } from 'react';
-import HeadBar from './Components/HeadBar'
+import Tab from './Components/HeadBar'
 import Sidebar from './Components/SideBar.js'
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <HeadBar />
+      <Tab/>
       <Sidebar />
     </div>
   );  

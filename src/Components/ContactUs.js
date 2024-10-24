@@ -1,4 +1,5 @@
 import React from 'react'
+import HeadBar from './HeadBar.js';
 
 const ContactUs = () => {
   return (

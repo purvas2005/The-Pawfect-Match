@@ -1,5 +1,5 @@
 import React from 'react'
-
+import HeadBar from './HeadBar.js';
 const Resources = () => {
   return (
     <div>

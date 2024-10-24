@@ -5,6 +5,10 @@ import AboutUs from './AboutUs.js'
 import ContactUs from './ContactUs.js'
 import Banner from './Banner.js';
 import Resources from './Resources.js'
+import Team from './Team.js';
+import ApplyToAdopt from './ApplyToAdopt.js';
+import TrackUrApplication from './TrackUrApplication.js';
+import MeetOthers from './MeetOthers.js';
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeContent, setActiveContent] = useState('home');
@@ -12,12 +16,15 @@ const Sidebar = () => {
   const menuItems = [
     { id: 'home', icon: '🏠', text: 'Home' },
     { id: 'profile', icon: '🐾', text: 'Pet Profiles' },
+    { id:'applytoadopt',icon:'🩷',text:'Apply to Adopt'},
+    { id:'trackurapplication',icon:'📈',text:'Track your application'},
+    { id:'resources',icon:'📚',text:'Resources'},
+    {id:'feedback',icon:'💬',text:'Feedback'},
+    {id:'meetothers',icon:'🤝',text:'Meet Other Pet Parents'},
     { id: 'about', icon: '⚙️', text: 'About Us' },
     { id:'contact',icon:'☎️',text:'Contact Us'},
-    { id:'resources',icon:'📚',text:'Resources'},
+    {id:'team',icon:'👥',text:'Our Team'}
   ];
-
-  // Content components for each menu item
   const contentComponents = {
     home: (
       <div className="content-section">
@@ -26,8 +33,17 @@ const Sidebar = () => {
     ),
     profile: (
       <div className="content-section">
-        <h1>Profile</h1>
-        <p>This is your profile page. Here you can view and edit your information.</p>
+        <h1>Pet Profile</h1>
+      </div>
+    ),
+    applytoadopt:(
+      <div>
+        <ApplyToAdopt/>
+      </div>
+    ),
+    trackurapplication:(
+      <div>
+        <TrackUrApplication/>
       </div>
     ),
     about: (
@@ -44,12 +60,21 @@ const Sidebar = () => {
       <div>
         <Resources/>
       </div>
+    ),
+    meetother:(
+      <div>
+        <MeetOthers/>
+      </div>
+    ),
+    team:(
+      <div className="content-section">
+          <Team/>
+      </div>
     )
   };
 
   const handleMenuClick = (id) => {
     setActiveContent(id);
-    // On mobile, close the sidebar after selection
     if (window.innerWidth <= 768) {
       setIsOpen(false);
     }

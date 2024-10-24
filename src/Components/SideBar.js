@@ -3,29 +3,48 @@ import React, { useState } from 'react';
 import './SideBar.css';
 import AboutUs from './AboutUs.js'
 import ContactUs from './ContactUs.js'
-import PetProfiles from './PetProfiles.js'
+import Banner from './Banner.js';
+import Resources from './Resources.js'
+import Team from './Team.js';
+import PetProfiles from './PetProfiles.js';
+import ApplyToAdopt from './ApplyToAdopt.js';
+import TrackUrApplication from './TrackUrApplication.js';
+import MeetOthers from './MeetOthers.js';
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeContent, setActiveContent] = useState('home');
 
   const menuItems = [
     { id: 'home', icon: '🏠', text: 'Home' },
-    { id: 'profile', icon: '👤', text: 'Pet Profiles' },
+    { id: 'profile', icon: '🐾', text: 'Pet Profiles' },
+    { id:'applytoadopt',icon:'🩷',text:'Apply to Adopt'},
+    { id:'trackurapplication',icon:'📈',text:'Track your application'},
+    { id:'resources',icon:'📚',text:'Resources'},
+    {id:'feedback',icon:'💬',text:'Feedback'},
+    {id:'meetothers',icon:'🤝',text:'Meet Other Pet Parents'},
     { id: 'about', icon: '⚙️', text: 'About Us' },
-    { id:'contact',icon:'A',text:'Contact Us'}
+    { id:'contact',icon:'☎️',text:'Contact Us'},
+    {id:'team',icon:'👥',text:'Our Team'}
   ];
-
-  // Content components for each menu item
   const contentComponents = {
     home: (
       <div className="content-section">
-        <h1>Home</h1>
-        <p>Welcome to our awesome application! This is the home page content.</p>
+        <Banner/>
       </div>
     ),
     profile: (
-      <div className="content-section" id="profiles">
+      <div className="content-section">
         <PetProfiles/>
+      </div>
+    ),
+    applytoadopt:(
+      <div>
+        <ApplyToAdopt/>
+      </div>
+    ),
+    trackurapplication:(
+      <div>
+        <TrackUrApplication/>
       </div>
     ),
     about: (
@@ -37,12 +56,26 @@ const Sidebar = () => {
       <div className="content-section">
           <ContactUs/>
       </div>
+    ),
+    resources:(
+      <div>
+        <Resources/>
+      </div>
+    ),
+    meetother:(
+      <div>
+        <MeetOthers/>
+      </div>
+    ),
+    team:(
+      <div className="content-section">
+          <Team/>
+      </div>
     )
   };
 
   const handleMenuClick = (id) => {
     setActiveContent(id);
-    // On mobile, close the sidebar after selection
     if (window.innerWidth <= 768) {
       setIsOpen(false);
     }

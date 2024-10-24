@@ -89,6 +89,12 @@
   margin: 0 auto;
 }
 
+#profile{
+  margin-left: 50px;
+  max-width: fit-content;
+  margin-right: 50px;
+}
+
 .content-section h1 {
   margin-bottom: 20px;
   color: #1f2937;

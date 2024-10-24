@@ -19,14 +19,7 @@ function App() {
     <div className="App">
       <HeadBar />
       <Sidebar />
-      <div style={{ marginLeft:'0', transition: 'margin-left 0.3s ease-in-out' }}>
-        <Banner />
-        {showContent && (
-          <div>
-            
-          </div>
-        )}
-      </div>
+    
     </div>
   );  
 }

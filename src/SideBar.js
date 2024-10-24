@@ -3,13 +3,14 @@ import React, { useState } from 'react';
 import './SideBar.css';
 import AboutUs from './AboutUs.js'
 import ContactUs from './ContactUs.js'
+import PetProfiles from './PetProfiles.js'
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeContent, setActiveContent] = useState('home');
 
   const menuItems = [
     { id: 'home', icon: '🏠', text: 'Home' },
-    { id: 'profile', icon: '👤', text: 'Profile' },
+    { id: 'profile', icon: '👤', text: 'Pet Profiles' },
     { id: 'about', icon: '⚙️', text: 'About Us' },
     { id:'contact',icon:'A',text:'Contact Us'}
   ];
@@ -24,8 +25,7 @@ const Sidebar = () => {
     ),
     profile: (
       <div className="content-section">
-        <h1>Profile</h1>
-        <p>This is your profile page. Here you can view and edit your information.</p>
+        <PetProfiles/>
       </div>
     ),
     about: (

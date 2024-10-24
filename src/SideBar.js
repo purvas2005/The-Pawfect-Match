@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './SideBar.css';
 import AboutUs from './AboutUs.js'
-
+import ContactUs from './ContactUs.js'
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeContent, setActiveContent] = useState('home');
@@ -11,6 +11,7 @@ const Sidebar = () => {
     { id: 'home', icon: '🏠', text: 'Home' },
     { id: 'profile', icon: '👤', text: 'Profile' },
     { id: 'about', icon: '⚙️', text: 'About Us' },
+    { id:'contact',icon:'A',text:'Contact Us'}
   ];
 
   // Content components for each menu item
@@ -32,6 +33,11 @@ const Sidebar = () => {
         <AboutUs/>
       </div>
     ),
+    contact:(
+      <div className="content-section">
+          <ContactUs/>
+      </div>
+    )
   };
 
   const handleMenuClick = (id) => {

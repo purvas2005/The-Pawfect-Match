@@ -23,8 +23,7 @@ function App() {
         <Banner />
         {showContent && (
           <div>
-            hello world
-
+            
           </div>
         )}
       </div>
@@ -33,4 +32,3 @@ function App() {
 }
 
 export default App;
-  

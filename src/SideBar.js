@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import './SideBar.css';
 import AboutUs from './AboutUs.js'
 import ContactUs from './ContactUs.js'
+import Banner from './Banner.js';
+import Resources from './Resources.js'
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeContent, setActiveContent] = useState('home');
@@ -11,15 +13,15 @@ const Sidebar = () => {
     { id: 'home', icon: '🏠', text: 'Home' },
     { id: 'profile', icon: '👤', text: 'Profile' },
     { id: 'about', icon: '⚙️', text: 'About Us' },
-    { id:'contact',icon:'A',text:'Contact Us'}
+    { id:'contact',icon:'☎️',text:'Contact Us'},
+    { id:'resources',icon:'📚',text:'Resources'},
   ];
 
   // Content components for each menu item
   const contentComponents = {
     home: (
       <div className="content-section">
-        <h1>Home</h1>
-        <p>Welcome to our awesome application! This is the home page content.</p>
+        <Banner/>
       </div>
     ),
     profile: (
@@ -36,6 +38,11 @@ const Sidebar = () => {
     contact:(
       <div className="content-section">
           <ContactUs/>
+      </div>
+    ),
+    resources:(
+      <div>
+        <Resources/>
       </div>
     )
   };

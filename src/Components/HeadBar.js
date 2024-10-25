@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Tab.css"
 import Login from './Login';
-import Logo from './Assets/logo_banner.jpeg';
+import Logo from './Assets/file.png';
 import { useState } from 'react';
 const Tab=()=>{
   const [showLogin, setShowLogin] = useState(false);

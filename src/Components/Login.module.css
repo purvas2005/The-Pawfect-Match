@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 950px; /* Shrinks the container size */
+    max-height: 510px;
+    margin-left: 250px;
+    margin-top:40px;
+    background-color:#f9e0f1;
+    border-radius: 20px; /* Adds rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    padding: 20px; /* Adds padding inside the container */
+    gap: 50px;
+  }
+    .slideshow-container {
+      width: 60%;
+      height: 521px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 60px;
+      margin-left: 50px; /* Instead of padding, use margin */
+      margin-top: 60px; 
+    }
+  
+    .slideshow-image{
+      width: 540px;
+      height: 549px;
+      border-radius: 20px;
+      transition: opacity 3s ease;
+    }
+  
+    .fade-in {
+      opacity: 1;
+    }
+    
+    .fade-out {
+      opacity: 0.2;
+    }
+  
+    .login-box {
+      width: 35%;
+      padding-left: 80px;
+      padding-bottom: 60px;
+    }
+    
+    h1 {
+      font-size: 35px;
+      color:  #2f1f43;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  .inputbtn {
+      margin: 5px 0;
+      padding: 8px;
+      font-size: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #2f1f43;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    
+    .signin-options {
+      margin-top: 20px;
+      text-align: center;
+    }

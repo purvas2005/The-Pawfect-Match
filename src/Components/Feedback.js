@@ -71,7 +71,7 @@ const Feedback = () => {
             ></textarea>
           </div>
 
-          <button type="submit">Submit Feedback</button>
+          <button type="submit" style={{bgcolor:"purple"}}>Submit Feedback</button>
         </form>
       ) : (
         <div className="thnx">

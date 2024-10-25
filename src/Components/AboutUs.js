@@ -34,7 +34,7 @@ At The Pawfect Match, we believe that every pet deserves a loving home and a sec
 <dd>We believe in the power of a caring community, and we’re proud to partner with local shelters, volunteers, and foster families who share our passion for animals.</dd> 
 </dl>
 <h3>Our Team</h3>
-Our team is made up of passionate animal lovers, many of whom have adopted pets themselves. We understand how important it is to find the right companion, and we are here to make that process as smooth and fulfilling as possible. Click <a href="www.google.com">here</a> to know more.
+Our team is made up of passionate animal lovers, many of whom have adopted pets themselves. We understand how important it is to find the right companion, and we are here to make that process as smooth and fulfilling as possible. Click <a>here</a> to know more.
 
 Thank you for visiting Pawfect Match! We’re excited to help you find your next best friend.
     </div>

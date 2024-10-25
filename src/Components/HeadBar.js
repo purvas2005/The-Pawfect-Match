@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Tab.css"
-import Login from './Login.js';
+import Login from './Login';
 import Logo from './Assets/logo_banner.jpeg';
 import { useState } from 'react';
 const Tab=()=>{
@@ -11,10 +11,13 @@ const Tab=()=>{
             <h1 className="tab-title">Pawfect Match🐾🖤</h1>
             <div className="login-container">
             <button onClick={() => setShowLogin(!showLogin)}>
-                    {showLogin ? "Close Login" : "Login"}
-                </button>
+        {showLogin ? 'Close Login' : 'Login'}
+      </button>
+      
+      {/* Login component rendered outside the button */}
+      {showLogin && <Login />}
+
             </div>
-            {showLogin && <Login />}
             <div className="login-container">
                 <button padding>Logout</button>
             </div>

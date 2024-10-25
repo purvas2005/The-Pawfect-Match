@@ -117,3 +117,15 @@ body {
     }
   }
 }
+
+.loading {
+  text-align: center;
+  font-size: 24px;
+  color: #ff6f61;
+}
+
+.error-message {
+  text-align: center;
+  font-size: 18px;
+  color: red;
+}

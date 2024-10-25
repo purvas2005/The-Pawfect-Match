@@ -2,7 +2,6 @@ import Banner from './Banner.js'
 import React, { useState, useEffect } from 'react';
 import HeadBar from './HeadBar.js';
 import Sidebar from './SideBar.js';
-import Slideshow from './Slideshow'; // Import the updated Slideshow component
 
 const HomePage = () => {
   const [showContent, setShowContent] = useState(false);
@@ -23,7 +22,7 @@ const HomePage = () => {
         <Banner />
         {showContent && (
           <div>
-            <Slideshow />
+            <Banner/>
           </div>
         )}
       </div>

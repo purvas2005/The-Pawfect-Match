@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 import styles from './SignUp.module.css';
-import Tab from './HeadBar';
+import Tab from './HeadBar';;
+import axios from 'axios';
+
 
 const SignUp = () => {
     const [email, setEmail] = useState('');
@@ -18,6 +21,18 @@ const SignUp = () => {
         }
         setError('');
         navigate('/HomePage'); 
+    try {
+        // Send a POST request to the signup endpoint
+        const response = await axios.post('http://localhost:5000/signup', {
+            email,
+            password,
+        });
+        console.log(response.data);
+        // You can redirect the user to the login page or show a success message here
+  
+      } catch (err) {
+        setError(err.response?.data?.message || 'Signup failed'); // Set error message if signup fails
+      }
     };
 
     return (
@@ -38,6 +53,8 @@ const SignUp = () => {
                     <input type="password" className={styles['inputbtn']}value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required /><br/>
 
                     {error && <p style={{ color: 'red' }}>{error}</p>}
+
+                    {error && <p style={{ color: 'red' }}>{error}</p>} {/* Display error message */}
 
                     <button type="submit">Sign Up</button>
                 </form>

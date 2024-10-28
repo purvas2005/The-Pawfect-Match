@@ -1,5 +1,7 @@
 import React from 'react'
 import HeadBar from './HeadBar.js';
+import './ForDL.css'
+import img from './Assets/resources1.gif'
 const Resources = () => {
   return (
     <div>
@@ -12,8 +14,9 @@ Before bringing your new pet home, take some time to prepare your living space. 
 
 <dt>Food and Water Bowls:</dt><dd> Choose durable, easy-to-clean bowls. Consider size and material—stainless steel bowls are often recommended for their hygiene and durability.</dd>
 
-<dt>Quality Pet Food:</dt><dd> Research and select a high-quality food appropriate for your pet's age, breed, and health needs. Consult your veterinarian for recommendations tailored to your specific pet.</dd>
-
+<dt>Quality Pet Food:</dt>
+<dd> Research and select a high-quality food appropriate for your pet's age, breed, and health needs. Consult your veterinarian for recommendations tailored to your specific pet.</dd>
+<img height="500px" width="500px" align="center"src={img}/>
 <dt>Comfortable Bedding:</dt><dd> Provide a cozy place for your pet to sleep. This will help them feel secure and relaxed in their new environment.</dd>
 
 <dt>Toys and Enrichment: </dt><dd>Toys are vital for mental stimulation and physical exercise. Choose a variety of toys—chew toys, interactive toys, and puzzle feeders to keep your pet engaged.</dd>

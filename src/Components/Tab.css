@@ -19,9 +19,17 @@
 .tab-title {
     font-family: Georgia, serif;
     margin: 0;
-    font-size: 24px;
+    font-size: 40px;
     color:  #2f1f43;
+    margin: 0 auto;
 }
+.login-container
+{
+        margin-left:0 auto; 
+        padding:10px;
+        margin-right: 10px;
+}       
+
 .loginlogo{
     align-items:right;
 }

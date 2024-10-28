@@ -1,4 +1,7 @@
-
+App
+{
+  background-color: white;
+}
 .banner_h2
 {
   font-size: 75px;
@@ -10,6 +13,10 @@
   opacity: 1;
   transition: opacity 1s ease-in-out;
   background-color: rgb(247, 148, 247);
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
 }
 
 .fade-out {

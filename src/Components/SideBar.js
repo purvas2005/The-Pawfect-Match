@@ -10,6 +10,8 @@ import PetProfiles from './PetProfiles.js';
 import ApplyToAdopt from './ApplyToAdopt.js';
 import TrackUrApplication from './TrackUrApplication.js';
 import MeetOthers from './MeetOthers.js';
+import Feedback from './Feedback.js';
+import HomePage from './HomePage.js';
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeContent, setActiveContent] = useState('home');
@@ -52,6 +54,11 @@ const Sidebar = () => {
         <AboutUs/>
       </div>
     ),
+    feedback:(
+      <div>
+        <Feedback/>
+      </div>
+    ),
     contact:(
       <div className="content-section">
           <ContactUs/>
@@ -62,7 +69,7 @@ const Sidebar = () => {
         <Resources/>
       </div>
     ),
-    meetother:(
+    meetothers:(
       <div>
         <MeetOthers/>
       </div>

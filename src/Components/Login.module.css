@@ -5,7 +5,7 @@
   max-width: 950px; /* Shrinks the container size */
   max-height: 510px;
   margin-left: 250px;
-  margin-top:40px;
+  margin-top:90px;
   background-color:#f9e0f1;
   border-radius: 20px; /* Adds rounded corners */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
@@ -77,20 +77,7 @@
   body {
     background-color: #c59ed7;
   }
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 950px; /* Shrinks the container size */
-    max-height: 510px;
-    margin-left: 250px;
-    margin-top:40px;
-    background-color:#f9e0f1;
-    border-radius: 20px; /* Adds rounded corners */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
-    padding: 20px; /* Adds padding inside the container */
-    gap: 50px;
-  }
+
     .slideshow-container {
       width: 60%;
       height: 521px;

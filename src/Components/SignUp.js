@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
+
+import { useNavigate } from 'react-router-dom';
 import styles from './SignUp.module.css';
-import Tab from './Tab';
+import Tab from './HeadBar';;
 import axios from 'axios';
+
 
 const SignUp = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault(); // Prevent the default form submission behavior
@@ -15,6 +19,8 @@ const SignUp = () => {
           setError('Passwords do not match'); // Check if passwords match
           return;
         }
+        setError('');
+        navigate('/HomePage'); 
     try {
         // Send a POST request to the signup endpoint
         const response = await axios.post('http://localhost:5000/signup', {
@@ -45,6 +51,8 @@ const SignUp = () => {
 
                     <label>Confirm Password</label><br/>
                     <input type="password" className={styles['inputbtn']}value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required /><br/>
+
+                    {error && <p style={{ color: 'red' }}>{error}</p>}
 
                     {error && <p style={{ color: 'red' }}>{error}</p>} {/* Display error message */}
 

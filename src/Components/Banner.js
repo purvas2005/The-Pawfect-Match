@@ -1,9 +1,9 @@
-
 import bannerImg from './Assets/banner_img2.jpg';
 import video1 from './Assets/banner_gif.gif';
 import React, { useState, useEffect } from 'react';
 import Login from './Login.js';
 import gif1 from './Assets/banner_gif.gif'
+
 const Banner = () => {
   const [visible, setVisible] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);

@@ -5,9 +5,6 @@ import Tab from './HeadBar';
 import Sidebar from './SideBar';
 // import Slideshow from './Login';
 
-import HeadBar from './HeadBar.js';
-import Sidebar from './SideBar.js';
-
 
 const HomePage = () => {
   const [showContent, setShowContent] = useState(false);

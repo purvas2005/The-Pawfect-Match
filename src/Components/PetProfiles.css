@@ -117,3 +117,41 @@ body {
     }
   }
 }
+.adopt-button {
+  display: inline-block; /* Makes the link behave like a block element */
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.adopt-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.loading {
+  text-align: center;
+  font-size: 24px;
+  color: #ff6f61;
+}
+
+.error-message {
+  text-align: center;
+  font-size: 18px;
+  color: red;
+}
+
+adopt-button {
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.adopt-button:hover {
+  background-color: #e67e22;
+}

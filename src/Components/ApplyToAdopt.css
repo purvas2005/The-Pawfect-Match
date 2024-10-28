@@ -1,0 +1,38 @@
+.apply-to-adopt-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .close-button {
+    float: right;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background-color: #c0392b;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .submit-button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #27ae60;
+  }
+  

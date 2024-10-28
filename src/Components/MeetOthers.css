@@ -1,0 +1,83 @@
+
+.pet-parent-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .pet-parent-card {
+    width: 250px;
+    height: 350px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    perspective: 1000px;
+  }
+  
+  .pet-parent-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .parent-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .pet-parent-card:hover .parent-card-inner {
+    transform: rotateY(180deg); /* Flips the card on hover */
+  }
+  
+
+  .parent-card-front,
+  .parent-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+.parent-card-front {
+        background-color: #f9e0f1; /* Front background */
+        font-size: 20px;
+    }
+  
+.parent-card-back {
+    background-color: #f0f0f0;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the top */
+    align-items: flex-end;
+    text-align: right;
+    padding: 16px; /* Padding around the content */
+    padding-left: 20px;
+    max-height: 100%;
+    overflow: auto;
+    font-size: 18px;
+  }
+  
+  .parent-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  

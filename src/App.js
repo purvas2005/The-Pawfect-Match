@@ -1,26 +1,32 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './Components/Login';
+import HomePage from './Components/HomePage';
+import SignUp from './Components/SignUp';
 import './App.css';
-import Banner from './Components/Banner.js'
-import React, { useState, useEffect } from 'react';
-import Tab from './Components/HeadBar'
-import Sidebar from './Components/SideBar.js'
 
 function App() {
-  const [showContent, setShowContent] = useState(false);
+  // const [showContent, setShowContent] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowContent(true);
-    }, 5000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setShowContent(true);
+  //   }, 5000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
-    <div className="App">
-      <Tab/>
-      <Sidebar />
-    </div>
-  );  
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/HomePage" element={<HomePage />} />
+          <Route path="/SignUp" element={<SignUp />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
 export default App;

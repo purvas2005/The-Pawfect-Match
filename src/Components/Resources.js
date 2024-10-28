@@ -108,6 +108,71 @@ const Resources = () => {
         <br></br>
       </dl>
       
+      <h4 className="section-title">Socialization and Interaction</h4> 
+      <p>Socializing your pet is essential for their emotional health. 
+      Gradually introduce them to new experiences, people, and other animals to help them build confidence.</p> 
+      
+      <dl> 
+        <dt><span className="icon">👥</span> Meeting New People:</dt> 
+        <dd>Encourage friends and family to visit. Keep interactions positive and rewarding.</dd> 
+        
+        <dt><span className="icon">🐾</span> Interacting with Other Pets:</dt> 
+        <dd>Arrange playdates with well-mannered pets to promote healthy social skills.</dd> 
+        
+        <dt><span className="icon">🌳</span> Exploring the Outdoors:</dt> 
+        <dd>Take your pet to different environments, like parks or trails, to expose them to various sights and sounds.</dd> 
+        <br></br>      
+      </dl> 
+      
+      <h4 className="section-title">Grooming and Care</h4> 
+      <p>Regular grooming is essential for your pet's health and happiness. Establish a grooming routine that suits your pet’s needs.</p> 
+      
+      <dl> 
+        <dt><span className="icon">🧼</span> Bathing:</dt> 
+        <dd>Determine the appropriate bathing frequency for your pet's breed and coat type.</dd> 
+        
+        <dt><span className="icon">✂️</span> Nail Trimming:</dt> 
+        <dd>Keep your pet's nails trimmed to prevent discomfort and potential injury.</dd> 
+        
+        <dt><span className="icon">🐶</span> Coat Care:</dt> 
+        <dd>Brush your pet regularly to reduce shedding and matting, especially for long-haired breeds.</dd> 
+        <br></br>
+      </dl> 
+      
+      <h4 className="section-title">Safety First</h4> 
+      <p>Creating a safe environment for your pet is crucial. Here are some key safety tips:</p> 
+      
+      <ul> 
+        <li>Secure all hazardous materials, including chemicals, plants, and small objects that could be ingested.</li> 
+        <li>Use pet-proof gates to restrict access to certain areas in your home.</li> 
+        <li>Ensure that your pet is properly identified with a collar and ID tag, and consider microchipping.</li> 
+        <li>Be cautious with open windows and balconies to prevent falls.</li> 
+        <br></br>
+      </ul> 
+      
+      <h4 className="section-title">Understanding Behavior</h4> 
+      <p>Every pet has its unique personality. Understanding their behavior can enhance your bond.</p> 
+      
+      <ul> 
+        <li><strong>Body Language:</strong> Learn your pet's signals, such as tail wagging, ear positioning, and vocalizations.</li> 
+        <li><strong>Common Issues:</strong> Be aware of common behavioral problems like separation anxiety and excessive barking, and seek professional help if needed.</li> 
+        <li><strong>Positive Reinforcement:</strong> Use treats and praise to encourage good behavior, building trust and understanding.</li> 
+        <br></br>
+      </ul> 
+        
+      <h4 className="section-title">Community Support</h4> 
+      <p>Connecting with other pet owners can provide valuable insights and support. Consider joining local pet clubs or online communities.</p> 
+      
+      <ul> 
+        <li>Participate in local pet events or meetups.</li> 
+        <li>Engage in social media groups dedicated to pet care.</li> 
+        <li>Share experiences and advice with fellow pet owners to foster a sense of community.</li> 
+        <br></br>
+      </ul> 
+      
+      <p>With the right preparation and support, you can ensure a happy and healthy life for your new furry friend. 
+        Remember, every pet is unique, so be patient and attentive to their needs as they settle into their new home.<br></br></p>
+
       <h4 className="section-title">Health and Wellness</h4>
       <p>Regular veterinary care is vital for your pet’s long-term health...</p>
       
@@ -116,7 +181,6 @@ const Resources = () => {
         <li><a href="https://www.akc.org/">American Kennel Club (AKC)</a></li>
         <li><a href="https://www.petmd.com/">PetMD</a></li>
         <li><a href="https://www.aspca.org/">ASPCA</a></li>
-        <li>Local Pet Groups and Social Media</li>
         <li>Pet Training Apps like Pupford and Dogo</li>
       </ul>
     </div>

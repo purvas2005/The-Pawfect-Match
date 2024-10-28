@@ -52,7 +52,7 @@ const Login = () => {
       <div className={styles['container']}>
         <div className={styles['login-box']}>
           <h1>Welcome back</h1>
-          <p>Please enter your details</p>
+          <p>Please enter your details</p><br/>
           <form onSubmit={handleSubmit}>
             <label>Email Address</label>
             <input type="email" className={styles['inputbtn']} value={email} onChange={(e) => setEmail(e.target.value)} required />
@@ -60,11 +60,11 @@ const Login = () => {
             <label>Password</label>
             <input type="password" className={styles['inputbtn']} value={password} onChange={(e) => setPassword(e.target.value)} required />
 
-            <div className={styles['options']}>
-              <a href="#">Forgot password?</a>
+            <br/><div className={styles['options']}>
+              <a href="#">Forgot password?</a><br/>
             </div>
 
-            <br/><button type="submit">Sign In</button>
+            <br/><button type="submit">Sign In</button><br/>
           </form>
 
           <div className={styles['signin-options']}>

@@ -1,0 +1,125 @@
+/* General layout */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Title and Subtitle */
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #7d3eb4;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    color: #5d5d5d;
+    margin-bottom: 20px;
+  }
+  
+  /* Highlighted Quote Box */
+  .highlight-box {
+    background-color: #f9e0f1;
+    color: #7d3eb4;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 1.2em;
+    border-left: 5px solid #7d3eb4;
+    font-style: italic;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    color: #7d3eb4;
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #7d3eb4;
+  }
+  
+  /* Definition list styling */
+  dl {
+    margin: 20px 0;
+  }
+  
+  dt {
+    font-weight: bold;
+    font-size: 35px;
+    color: #34495e;
+    margin-top: 10px;
+  }
+  
+  dd {
+    margin: 0 0 10px 20px;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  /* Icon for list items */
+  .icon {
+    margin-right: 5px;
+  }
+  
+  /* Image styling */
+  img {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Lists styling */
+  ul {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  
+  ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    color: #7d3eb4;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  ul li {
+    list-style-type: disc;
+    color: #333;
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Spacing */
+  .container h1,
+  .container p,
+  .container dl,
+  .container ul {
+    margin-bottom: 20px;
+  }
+  

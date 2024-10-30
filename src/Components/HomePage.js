@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
 import Banner from './Banner';
 import Tab from './HeadBar';
 import Sidebar from './SideBar';
-// import Slideshow from './Login';
-
 
 const HomePage = () => {
   const [showContent, setShowContent] = useState(false);
@@ -22,12 +19,6 @@ const HomePage = () => {
       <Tab />
       <Sidebar />
       <Banner />
-      {/* {showContent && (
-        // <div>
-        //   <Slideshow />
-        // </div>
-      )} */}
-
       <div style={{ marginLeft: '0', transition: 'margin-left 0.3s ease-in-out' }}>
         <Banner />
         {showContent && (

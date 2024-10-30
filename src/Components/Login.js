@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
 import styles from './Login.module.css';
 import Tab from './HeadBar';
+import axios from 'axios';
+
 import slide1 from './Assets/slide1.jpg'; 
 import slide2 from './Assets/slide2.jpg';
 import slide3 from './Assets/slide3.jpg';
@@ -39,23 +40,25 @@ const Slideshow = () => {
 };
 
 // Main Login Component
-const Login = () => {
+const Login=({ goToHomePage, goToSignUp }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const navigate = useNavigate();
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Simulate a login attempt (replace this with your actual login logic)
     try {
-      console.log('Login attempt with:', { email, password });
-      // If successful, navigate to home page
-      navigate('/HomePage');
+        const response = await axios.post('http://localhost:5000/api/auth/login', {
+            email,
+            password,
+        });
+        if (response.data.token) {
+            goToHomePage(); // Redirect to HomePage only if login is successful
+        }
     } catch (err) {
-      setError('Login failed. Please check your credentials.');
+        setError('Login failed. Please check your credentials.'); // Set error message on failed login
     }
-  };
+};
 
   return (
     <div>
@@ -86,14 +89,14 @@ const Login = () => {
             {error && <p style={{ color: 'red' }}>{error}</p>}
 
             <div className={styles['options']}>
-              <Link to="#">Forgot password?</Link>
+            <a href="#">Forgot password?</a>
             </div>
 
             <button type="submit">Sign In</button>
           </form>
 
           <div className={styles['signin-options']}>
-            <p>Don't have an account? <Link to="/SignUp">Sign Up</Link></p>
+          <p>Don't have an account? <button onClick={goToSignUp}>Sign Up</button></p>
           </div>
         </div>
         <Slideshow />

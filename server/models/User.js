@@ -1,12 +1,10 @@
-// models/User.js
-
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
-    unique: true, // Ensures no duplicate email addresses
+    unique: true,
   },
   password: {
     type: String,
@@ -14,5 +12,5 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-const User = mongoose.model('User', userSchema); // Create a model from the schema
-module.exports = User; // Export the model
+const User = mongoose.model('User', userSchema);
+module.exports = User;

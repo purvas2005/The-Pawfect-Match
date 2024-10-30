@@ -1,32 +1,24 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import Login from './Components/Login';
 import HomePage from './Components/HomePage';
 import SignUp from './Components/SignUp';
 import './App.css';
 
 function App() {
-  // const [showContent, setShowContent] = useState(false);
+  // Set initial page to "Login"
+  const [page, setPage] = useState("Login");
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setShowContent(true);
-  //   }, 5000);
-
-  //   return () => clearTimeout(timer);
-  // }, []);
+  // Define functions to update the page state, simulating navigation
+  const goToLogin = () => setPage("Login");
+  const goToHomePage = () => setPage("HomePage");
+  const goToSignUp = () => setPage("SignUp");
 
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/HomePage" element={<HomePage />} />
-          <Route path="/SignUp" element={<SignUp />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="App">
+      {page === "Login" && <Login goToHomePage={goToHomePage} goToSignUp={goToSignUp} />}
+      {page === "HomePage" && <HomePage goToLogin={goToLogin} />}
+      {page === "SignUp" && <SignUp goToHomePage={goToHomePage} />}
+    </div>
   );
 }
-
 export default App;

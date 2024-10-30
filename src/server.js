@@ -4,7 +4,7 @@ const cors = require('cors'); // Import CORS package
 
 const app = express();
 const url = 'mongodb://localhost:27017'; // MongoDB connection string
-const dbName = 'PawfectMatch'; // Your database name
+const dbName = 'pawfectmatch'; // Your database name
 
 let db;
 

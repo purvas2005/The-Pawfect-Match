@@ -18,12 +18,12 @@ const HomePage = () => {
     <div>
       <Tab />
       <Sidebar />
-      <Banner />
+      {/* <Banner /> */}
       <div style={{ marginLeft: '0', transition: 'margin-left 0.3s ease-in-out' }}>
-        <Banner />
+        {/* <Banner /> */}
         {showContent && (
           <div>
-            <Banner/>
+            {/* <Banner/> */}
           </div>
         )}
       </div>

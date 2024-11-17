@@ -1,12 +1,12 @@
 .team-container {
   font-family: Arial, sans-serif;
   margin: 20px auto;
-  padding: 20px;
+  padding: 30px;
   max-width: 600px;
   text-align: center;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   background-color: #f9f9f9;
 }
 
@@ -38,3 +38,56 @@
   margin: 5px 0;
 }
 
+
+
+/* Title Styles */
+.team-title {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Section Styles */
+.team-section {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.team-summary {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #7d3eb4;
+  background-color: #f9e0f1;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.team-summary:hover {
+  background-color: #d0e7fd;
+}
+
+/* List Styles */
+.team-list {
+  list-style: none;
+  padding: 10px 20px;
+  margin: 0;
+  background-color: #ffffff;
+  border-left: 4px solid #f9e0f1;
+  border-radius: 0 8px 8px 8px;
+}
+
+.team-member {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.team-member:hover {
+  color: #0056b3;
+  font-weight: bold;
+}

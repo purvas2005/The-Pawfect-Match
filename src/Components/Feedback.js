@@ -16,7 +16,8 @@ const Feedback = () => {
   };
   return (
     <div className="outerdiv">
-      <h1>We Value Your Feedback!</h1>
+      <h1 style={{fontSize:50, color: '#7d3eb4'}}>We value your Feedback!</h1>
+      <br></br>
       <p>Please tell us about your experience with our pet adoption services.</p>
 
       {!submitted ?
@@ -71,7 +72,7 @@ const Feedback = () => {
             ></textarea>
           </div>
 
-          <button type="submit" style={{bgcolor:"purple"}}>Submit Feedback</button>
+          <button type="submit" style={{bgcolor:"#7d3eb4"}}>Submit Feedback</button>
         </form>
       ) : (
         <div className="thnx">

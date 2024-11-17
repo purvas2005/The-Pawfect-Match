@@ -34,7 +34,7 @@ const MeetOthers = () => {
         <div key={parent.id} className="pet-parent-card">
           <div className="parent-card-inner">
             <div className="parent-card-front">
-              <img src={parent.image} alt={parent.name} className="parent-image" />
+              <img src={parent.imageURL} alt={parent.name} className="parent-image" />
               <h3>{parent.name}</h3>
               <p><strong>Location:</strong> {parent.location}</p>
             </div>

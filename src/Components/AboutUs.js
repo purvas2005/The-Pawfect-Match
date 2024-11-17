@@ -5,8 +5,8 @@ import './Resources.css';
 const AboutUs = () => {
   return (
     <div className="container">
-      <h1>About Us</h1>
-      <h2 className="subtitle">Welcome to The Pawfect Match – Where Every Pet Finds Their Forever Home</h2>
+      <h1 style={{fontSize:50, color: '#7d3eb4'}}>About Us</h1>
+      <h2 className="subtitle" style={{color: "#7d3eb4"}}>Welcome to The Pawfect Match – Where Every Pet Finds Their Forever Home</h2>
       <p>
         At The Pawfect Match, we believe that every pet deserves a loving home and a second chance at life. Founded on the principles of compassion, care, and community, we strive to connect rescued animals with families who are ready to give them the love they need and deserve.
       </p>

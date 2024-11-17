@@ -2,7 +2,7 @@ import bannerImg from './Assets/banner_img2.jpg';
 import video1 from './Assets/banner_gif.gif';
 import React, { useState, useEffect } from 'react';
 import Login from './Login.js';
-import gif1 from './Assets/banner_gif.gif'
+import bgimg from './Assets/bgimg.png'
 
 const Banner = () => {
   const [visible, setVisible] = useState(true);
@@ -29,24 +29,28 @@ const Banner = () => {
         <div
           style={{
             backgroundImage: `url(${bannerImg})`,
-            height: '150px',
+            height: '100px',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             justifyItems: 'center',
+            width: '100%'
           }}
         >
-          <h2 className="banner_h2">Welcome to Pawfect Match!</h2>
-          <video src={video1} />
+          {/* <h2 className="banner_h2">Welcome to Pawfect Match!</h2>
+          <video src={video1} /> */}
         </div>
       </div>
       <div>
+        <h1 className="title" style={{fontSize: 50,color:'#7d3eb4',textDecoration: 'underline'}}>Welcome to Pawfect Match!</h1>
         <br/>
-        <br/>
-        <img height="100px" width="100px" src={gif1} style={{alignItems:'center'}}/>
-        <h1>Welcome to Pawfect Match!</h1>
-        <p>
+        <h3 style={{fontSize:25}}>
           We are your one-stop destination for everything pet-related! Whether you are looking to adopt or are a seasoned foster parent, we offer services of interest to all!
-        </p>
+        </h3>
+        <img src={bgimg} style={{
+    alignItems: 'center',
+    boxShadow: 'none',
+    border: 'none',
+  }} />
       </div>
     </div>
   );

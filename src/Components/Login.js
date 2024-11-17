@@ -3,7 +3,7 @@ import styles from './Login.module.css';
 import Tab from './HeadBar';
 import axios from 'axios';
 
-import slide1 from './Assets/slide1.jpg'; 
+import slide1 from './Assets/slide1.jpg';
 import slide2 from './Assets/slide2.jpg';
 import slide3 from './Assets/slide3.jpg';
 import slide4 from './Assets/slide4.jpg';
@@ -30,10 +30,10 @@ const Slideshow = () => {
 
   return (
     <div className={styles['slideshow-container']}>
-      <img 
-        src={images[currentImageIndex]} 
-        alt={`Slide ${currentImageIndex + 1}`} 
-        className={`${styles['slideshow-image']} ${fadeClass}`} 
+      <img
+        src={images[currentImageIndex]}
+        alt={`Slide ${currentImageIndex + 1}`}
+        className={`${styles['slideshow-image']} ${fadeClass}`}
       />
     </div>
   );
@@ -44,7 +44,7 @@ const Login=({ goToHomePage, goToSignUp }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -69,21 +69,21 @@ const Login=({ goToHomePage, goToSignUp }) => {
           <p>Please enter your details</p>
           <form onSubmit={handleSubmit}>
             <label>Email Address</label>
-            <input 
-              type="email" 
-              className={styles['inputbtn']} 
-              value={email} 
-              onChange={(e) => setEmail(e.target.value)} 
-              required 
+            <input
+              type="email"
+              className={styles['inputbtn']}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
 
             <label>Password</label>
-            <input 
-              type="password" 
-              className={styles['inputbtn']} 
-              value={password} 
-              onChange={(e) => setPassword(e.target.value)} 
-              required 
+            <input
+              type="password"
+              className={styles['inputbtn']}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
             />
 
             {error && <p style={{ color: 'red' }}>{error}</p>}

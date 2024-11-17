@@ -48,17 +48,6 @@ const Banner = () => {
           We are your one-stop destination for everything pet-related! Whether you are looking to adopt or are a seasoned foster parent, we offer services of interest to all!
         </p>
       </div>
-      <button onClick={openModal}>Click Here for a more seamless experience!</button>
-
-      {isModalOpen && (
-        <dialog open className="modal">
-          <button onClick={closeModal} className="modal-close-btn">
-            Close
-          </button>
-          <p>Would you like to login for a more seamless experience?</p>
-          <button onClick={Login}>Login</button>
-        </dialog>
-      )}
     </div>
   );
 };

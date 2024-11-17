@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Tab.css"
-import Login from './Login';
+//import Login from './Login';
 import Logo from './Assets/file.png';
 import { useState } from 'react';
 const Tab=()=>{
-  const [showLogin, setShowLogin] = useState(false);
+  //const [showLogin, setShowLogin] = useState(false);
     return(
         <div className='tab'>
             <img src={Logo} alt="Logo" className="logo" />

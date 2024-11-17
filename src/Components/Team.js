@@ -1,28 +1,26 @@
 import React from 'react';
+import './Team.css'; // Optional CSS file for additional styling
 
 const Team = () => {
   return (
-    <div>
-      <h1>Meet the Team!</h1>
-      <details>
-        <summary>Non-Technical Team</summary>
-        <ul>
+    <div className="team-container">
+      <h1 className="team-title">Meet the Team!</h1>
 
+      <details className="team-section">
+        <summary className="team-summary">Non-Technical Team</summary>
+        <ul className="team-list">
+          <li>Non-Technical Member 1</li>
+          <li>Non-Technical Member 2</li>
+          <li>Non-Technical Member 3</li>
         </ul>
       </details>
 
-      <details>
-        <summary>Technical Team</summary>
-        <ul>
-            <li>Purva Parijat Sharma</li>
-            <li>Rachna Ammunje Nayak</li>
-            <li>Prarthana Senthil Pandian</li>
-        </ul>
-      </details>
-      <details>
-        <summary>Unpaid Peasant</summary>
-        <ul>
-            <li>Raunak Bagaria</li>
+      <details className="team-section">
+        <summary className="team-summary">Technical Team</summary>
+        <ul className="team-list">
+          <li>Purva Parijat Sharma</li>
+          <li>Rachna Ammunje Nayak</li>
+          <li>Prarthana Senthil Pandian</li>
         </ul>
       </details>
     </div>

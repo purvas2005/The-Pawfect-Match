@@ -20,7 +20,6 @@ const Sidebar = () => {
     { id: 'home', icon: '🏠', text: 'Home' },
     { id: 'profile', icon: '🐾', text: 'Pet Profiles' },
     { id:'applytoadopt',icon:'🩷',text:'Apply to Adopt'},
-    { id:'trackurapplication',icon:'📈',text:'Track your application'},
     { id:'resources',icon:'📚',text:'Resources'},
     {id:'feedback',icon:'💬',text:'Feedback'},
     {id:'meetothers',icon:'🤝',text:'Meet Other Pet Parents'},
@@ -41,12 +40,7 @@ const Sidebar = () => {
     ),
     applytoadopt:(
       <div>
-        <ApplyToAdopt/>
-      </div>
-    ),
-    trackurapplication:(
-      <div>
-        <TrackUrApplication/>
+        <h1> Please go to pet profiles and select a pet first! </h1>
       </div>
     ),
     about: (

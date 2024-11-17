@@ -1,0 +1,40 @@
+.team-container {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.team-title {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.team-section {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.team-summary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.team-list {
+  list-style-type: square;
+  margin: 10px 0 0 20px;
+  padding: 0;
+  color: #555;
+}
+
+.team-list li {
+  margin: 5px 0;
+}
+

@@ -31,9 +31,9 @@ const ContactUs = () => {
             📧 Email Us
           </summary>
           <ul style={{ listStyleType: 'none', padding: '10px', lineHeight: '1.8' }}>
-            <li>pes1ug23cs456@pesu.pes.edu</li>
-            <li>pes1ug23cs470@pesu.pes.edu</li>
-            <li>pes1ug23cs444@pesu.pes.edu</li>
+            <li>email1</li>
+            <li>email2</li>
+            <li>email3</li>
           </ul>
         </details>
       </div>

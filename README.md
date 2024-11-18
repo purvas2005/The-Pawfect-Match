@@ -4,11 +4,11 @@
 1. Clone repository
 2. Install mongodb and mongodb compass (mongosh shall work as well but it is easier to use mongodb compass) to run on localhost
 3. Create a connection in MongoDB called PawfectMatch.
-4. Create the below collections inside this database by importing the respective .csv files from the public folder
-       a. adoptionforms
-       b. PetParents
-       c. petprofiles
-       d. users
+4. Create the below collections inside this database by importing the respective .csv files from the public folder <br>
+       a. adoptionforms <br>
+       b. PetParents <br>
+       c. petprofiles <br>
+       d. users 
 5. Be mindful of the port you have specified vs the port your actual database runs on.
 6. While trying to run remember to activate the server as well.
  Happy Coding!

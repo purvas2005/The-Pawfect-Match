@@ -1,3 +1,5 @@
+#### Overview of project:
+
 ### About Us
 
 *Welcome to *Pawfect Match* – Where Every Pet Finds Their Forever Home*
@@ -22,27 +24,30 @@ At *Pawfect Match*, we partner with local shelters, foster networks, and rescue 
 #### Our Team
 Our team is made up of passionate animal lovers, many of whom have adopted pets themselves. We understand how important it is to find the right companion, and we are here to make that process as smooth and fulfilling as possible.
 
-
-#### Here are steps to deploy this on your system:
-
-a) Clone repository
-b) Install mongodb and mongodb compass (mongosh shall work as well but it is easier to use mongodb compass)
-c) Create a database called PawfectMatch.
-d) Be mindful of the port you have specified vs the port your actual database runs on.
-e) While trying to run remember to activate the server as well.
-f) Happy Coding!
-
-
-#### Versions:
-node : v20.18.0
-npm : 10.8.2
-react : 18.3.1
-mongoDB compass : 1.44.5
-mongod : v8.0.3
-git : 2.43.0
-
-
 #### Join Us
 There are many ways you can get involved with *Pawfect Match*! Whether you’re ready to adopt, interested in fostering, or want to volunteer, we welcome you to be part of our mission. Together, we can give every pet a chance at a happy and loving life.
 
 Thank you for visiting *Pawfect Match*! We’re excited to help you find your next best friend.
+
+#### Code related info:
+
+#### Here are steps to deploy this on your system:
+
+1. Clone repository
+2. Install mongodb and mongodb compass (mongosh shall work as well but it is easier to use mongodb compass)
+3. Create a database called PawfectMatch.
+4. Be mindful of the port you have specified vs the port your actual database runs on.
+5. While trying to run remember to activate the server as well.
+ Happy Coding!
+
+
+#### Versions:
+1. node : v20.18.0
+2. npm : 10.8.2
+3. react : 18.3.1
+4. mongoDB compass : 1.44.5
+5. mongod : v8.0.3
+6. git : 2.43.0
+
+
+

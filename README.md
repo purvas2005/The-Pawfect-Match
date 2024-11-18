@@ -23,17 +23,17 @@ At *Pawfect Match*, we partner with local shelters, foster networks, and rescue 
 Our team is made up of passionate animal lovers, many of whom have adopted pets themselves. We understand how important it is to find the right companion, and we are here to make that process as smooth and fulfilling as possible.
 
 
-Here are steps to deploy this on your system:
+#### Here are steps to deploy this on your system:
 
-(a) Clone repository
-(b) Install mongodb and mongodb compass (mongosh shall work as well but it is easier to use mongodb compass)
-(c) Create a database called PawfectMatch.
-(d) Be mindful of the port you have specified vs the port your actual database runs on.
-(e) While trying to run remember to activate the server as well.
-(f) Happy Coding!
+a) Clone repository
+b) Install mongodb and mongodb compass (mongosh shall work as well but it is easier to use mongodb compass)
+c) Create a database called PawfectMatch.
+d) Be mindful of the port you have specified vs the port your actual database runs on.
+e) While trying to run remember to activate the server as well.
+f) Happy Coding!
 
 
-Versions:
+#### Versions:
 node : v20.18.0
 npm : 10.8.2
 react : 18.3.1

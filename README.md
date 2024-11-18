@@ -1,3 +1,26 @@
+
+#### Here are steps to deploy this on your system:
+
+1. Clone repository
+2. Install mongodb and mongodb compass (mongosh shall work as well but it is easier to use mongodb compass)
+3. Create a database called PawfectMatch.
+4. Be mindful of the port you have specified vs the port your actual database runs on.
+5. While trying to run remember to activate the server as well.
+ Happy Coding!
+
+
+#### Versions:
+1. node : v20.18.0
+2. npm : 10.8.2
+3. react : 18.3.1
+4. mongoDB compass : 1.44.5
+5. mongod : v8.0.3
+6. git : 2.43.0
+
+
+
+
+
 #### Overview of project:
 
 ### About Us
@@ -30,24 +53,5 @@ There are many ways you can get involved with *Pawfect Match*! Whether you’re 
 Thank you for visiting *Pawfect Match*! We’re excited to help you find your next best friend.
 
 #### Code related info:
-
-#### Here are steps to deploy this on your system:
-
-1. Clone repository
-2. Install mongodb and mongodb compass (mongosh shall work as well but it is easier to use mongodb compass)
-3. Create a database called PawfectMatch.
-4. Be mindful of the port you have specified vs the port your actual database runs on.
-5. While trying to run remember to activate the server as well.
- Happy Coding!
-
-
-#### Versions:
-1. node : v20.18.0
-2. npm : 10.8.2
-3. react : 18.3.1
-4. mongoDB compass : 1.44.5
-5. mongod : v8.0.3
-6. git : 2.43.0
-
 
 
